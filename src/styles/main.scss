@@ -5,3 +5,33 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.page-main {
+    background-image: url("../img/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        display: block;
+        width: 139px;
+        height: 31px;
+        background-image: url(../img/logo.png);
+    }
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        &__item {
+            margin-left: 15px;
+        }
+    }
+}
